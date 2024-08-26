@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .app-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 50px auto;
+        }
+        #bg-image {
+            width: 800px;
+            height: 600px;
+            object-fit: cover
+        }
+        #touch-canvas, #content-canvas {
+            width: 800px;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <img src="../assets/bg_001.jpg" alt="" id="bg-image">
+        <canvas id="content-canvas"></canvas>
+        <canvas id="touch-canvas"></canvas>
+    </div>
+    <div class="result">
+
+    </div>
+    <script type="module" src="./script/canvas.js"></script>
+</body>
+</html>
